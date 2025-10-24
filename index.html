@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Browser Dashboard</h1>
+    </header>
+
+    <main>
+      <!-- 1. Fensterinformationen -->
+      <section id="info-section">
+        <h2>Fensterinformationen</h2>
+        <ul>
+          <li>Fensterbreite: <span id="window-width">–</span> px</li>
+          <li>Fensterhöhe: <span id="window-height">–</span> px</li>
+          <li>Scrollposition: <span id="scroll-position">–</span> px</li>
+          <li>Aktuelle URL: <span id="current-url">–</span></li>
+          <li>Protokoll: <span id="protocol">–</span></li>
+          <li>Online-Status: <span id="online-status">–</span></li>
+          <li>User-Agent: <span id="user-agent">–</span></li>
+        </ul>
+      </section>
+
+      <!-- 2. Ereignisse -->
+      <section id="event-section">
+        <h2>Fenster-Ereignisse</h2>
+        <p id="focus-status">Fokusstatus: –</p>
+        <p id="connection-status">Verbindungsstatus: –</p>
+      </section>
+
+      <!-- 3. Popup -->
+      <section id="popup-section">
+        <h2>Popup-Fenster</h2>
+        <button id="open-popup">Popup öffnen</button>
+        <button id="close-popup" disabled>Popup schließen</button>
+      </section>
+
+      <!-- 4. Timing -->
+      <section id="timing-section">
+        <h2>Timer & Countdown</h2>
+        <p id="stay-time">
+          Du bist seit <span id="seconds-on-page">0</span> Sekunden hier.
+        </p>
+        <button id="start-countdown">Countdown starten (5 Sekunden)</button>
+        <p id="countdown-result"></p>
+      </section>
+
+      <!-- 5. Navigation -->
+      <section id="navigation-section">
+        <h2>Navigation & Reload</h2>
+        <button id="reload-page">Seite neu laden</button>
+        <button id="go-back">Zurück</button>
+        <button id="go-forward">Vorwärts</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Dashboard Projekt</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
